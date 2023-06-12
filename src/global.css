@@ -1,0 +1,70 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: vazir_thin;
+    font-weight: 100;
+    src: url("./assets/webfonts/Vazirmatn-Thin.woff2") format("woff");
+  }
+  @font-face {
+    font-family: vazir_exlight;
+    font-weight: 200;
+    src: url("./assets/webfonts/Vazirmatn-ExtraLight.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: vazir_light;
+    font-weight: 300;
+    src: url("./assets/webfonts/Vazirmatn-Light.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: vazirmatn;
+    font-weight: 400;
+    src: url("./assets/webfonts/Vazirmatn-Regular.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: vazir_medium;
+    font-weight: 500;
+    src: url("./assets/webfonts/Vazirmatn-Medium.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: vazir_semiB;
+    font-weight: 600;
+    src: url("./assets/webfonts/Vazirmatn-SemiBold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: vazir_bold;
+    font-weight: 700;
+    src: url("./assets/webfonts/Vazirmatn-Bold.woff2") format("woff2");
+  }
+
+  @font-face {
+    font-family: vazir_exbold;
+    font-weight: 800;
+    src: url("./assets/webfonts/Vazirmatn-ExtraBold.woff2") format("woff2");
+  }
+  @font-face {
+    font-family: shabnam;
+    font-weight: 400;
+    src: url("./assets/webfonts/shabnamFont/Shabnam-FD.woff") format("woff2");
+  }
+  @font-face {
+    font-family: shabnam_bold;
+    font-weight: 800;
+    src: url("./assets/webfonts/shabnamFont/Shabnam-Bold-FD.woff2")
+      format("woff2");
+  }
+}
+
+
+@layer components {
+  .slide-bar-link {
+    @apply  flex items-center font-vazir_light hover:scale-110 transition-all text-dim_gray text-lg hover:text-deep_pink;
+  }
+}
